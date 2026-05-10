@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Sekolah</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+    body {
+      height: 100vh;
+      background: url('school-bg.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+    }
+
+    .login-box {
+      position: relative;
+      z-index: 2;
+      width: 380px;
+      background: rgba(255,255,255,0.95);
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      text-align: center;
+    }
+
+    .login-box h1 {
+      color: #b0004d;
+      margin-bottom: 25px;
+    }
+
+    .input-box {
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    .input-box label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #b0004d;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background: #8a003c;
+    }
+
+    .register {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .register a {
+      color: #b0004d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="login-box">
+    <h1>Login</h1>
+
+    <div class="input-box">
+      <label>Username</label>
+      <input type="text" placeholder="Masukkan username">
+    </div>
+
+    <div class="input-box">
+      <label>Password</label>
+      <input type="password" placeholder="Masukkan password">
+    </div>
+
+    <button class="btn">Masuk</button>
+
+    <div class="register">
+      Belum ada akaun? <a href="#">Buat Akaun</a>
+    </div>
+  </div>
+</body>
+</html>
